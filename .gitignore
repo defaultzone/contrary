@@ -1,0 +1,4 @@
+build/
+.cache/
+targets/*/iso/*.iso
+targets/*/iso/boot/*.bin
