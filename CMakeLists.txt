@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 4.1.2)
 project(contrary VERSION 0.0.0 LANGUAGES CXX ASM_NASM)
 
 set(CMAKE_CXX_FLAGS                 "${CMAKE_CXX_FLAGS} -O2 -fno-exceptions -fno-rtti -ffreestanding -Wall -Wextra -Werror")
-set(CMAKE_EXE_LINKER_FLAGS          "-T ${CMAKE_SOURCE_DIR}/targets/x86_64/linker.ld -nostdlib -no-pie -g")
+set(CMAKE_EXE_LINKER_FLAGS          "-T ${CMAKE_SOURCE_DIR}/targets/x86_64/linker.ld -nostdlib -no-pie")
 set(CMAKE_ASM_NASM_OBJECT_FORMAT    "elf64")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_SOURCE_DIR}/targets/x86_64/iso/boot)
 set(CMAKE_CXX_STANDARD              26)
