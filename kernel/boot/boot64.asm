@@ -11,6 +11,9 @@ long_mode_start:
     mov gs, ax
     mov ss, ax
 
+    extern initialize_idt
+    call initialize_idt
+
     extern kernel_main
     call kernel_main
 
